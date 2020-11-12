@@ -1,0 +1,25 @@
+body {
+  background-color: #333;
+}
+
+.box {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  top: 200px;
+  transition-property: background, border-radius; /* this can also take "all" as a parameter.  */
+  /* transition-delay: 0.3s; */ /* use comma separated values to target individual transition properties or use a single value to target all */
+  transition-duration: 1s; /* use comma separated values to target individual transition properties or use a single value to target all. Here, it'll take 3secs for border radius to apply  */
+  transition-timing-function: ease-in;
+}
+
+/*
+Transitions work with a triger. e.g hover or focus or active
+*/
+
+.box:hover {
+  background: red;
+  border-radius: 50%;
+}
